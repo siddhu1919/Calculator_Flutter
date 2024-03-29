@@ -2,8 +2,6 @@
 
 import 'package:flutter/material.dart';
 
-
-
 class buttons extends StatelessWidget {
   const buttons({
     super.key,
@@ -18,7 +16,7 @@ class buttons extends StatelessWidget {
         style: TextStyle(
           color: Colors.white,
           fontSize: 34,
-    
+
           // fontWeight: FontWeight.bold,
         ),
       ),

@@ -94,9 +94,9 @@ class MyApp extends StatelessWidget {
             Container(
               height: MediaQuery.sizeOf(context).height * 0.6,
               width: double.infinity,
-              padding: const EdgeInsets.symmetric(horizontal: 25, vertical: 30),
+              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 25),
               decoration: const BoxDecoration(
-                color: Colors.black,
+                color: Colors.white,
                 // borderRadius: BorderRadius.vertical(top: Radius.circular(30)),
               ),
               child: const Column(
@@ -104,8 +104,11 @@ class MyApp extends StatelessWidget {
                   Row(
                     children: [
                       buttons(),
+                      SizedBox(width: 25),
                       buttons(),
+                      SizedBox(width: 25),
                       buttons(),
+                      SizedBox(width: 25),
                       buttons(),
                     ],
                   )
