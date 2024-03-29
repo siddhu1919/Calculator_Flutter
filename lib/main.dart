@@ -1,3 +1,6 @@
+// ignore_for_file: prefer_const_constructors, sort_child_properties_last
+
+import 'package:calculator/buttons.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
@@ -21,14 +24,52 @@ class MyApp extends StatelessWidget {
           title: const Center(
               child: Padding(
             padding: EdgeInsets.only(top: 30),
-            child: Text(
-              'I N S T A ✧ C A L C',
-              style: TextStyle(
-                  color: Colors.lightGreenAccent,
-                  fontSize: 30,
-                  fontWeight: FontWeight.w500),
-            ),
+            // child: Text(
+            //   'I N S T A ✧ C A L C',
+            //   style: TextStyle(
+            //       color: Colors.white,
+            //       fontSize: 30,
+            //       fontWeight: FontWeight.w500),
+            // ),
           )),
+          leading: IconButton(
+            icon: const Icon(
+              Icons.close_fullscreen_sharp,
+              size: 30,
+            ),
+            onPressed: () {
+              // Implement what happens when the resize icon is tapped
+              print('Resize icon tapped');
+            },
+          ),
+          actions: [
+            IconButton(
+              onPressed: () {},
+              icon: Icon(
+                Icons.science,
+                size: 30,
+                color: Colors.white,
+              ),
+            ),
+            SizedBox(width: 15),
+            IconButton(
+              onPressed: () {},
+              icon: Icon(
+                Icons.api,
+                size: 30,
+                color: Colors.white,
+              ),
+            ),
+            SizedBox(width: 15),
+            IconButton(
+              onPressed: () {},
+              icon: Icon(
+                Icons.more_vert,
+                size: 30,
+                color: Colors.white,
+              ),
+            ),
+          ],
         ),
         body: Column(
           children: [
@@ -48,6 +89,27 @@ class MyApp extends StatelessWidget {
                 ),
                 readOnly: true,
                 autofocus: false,
+              ),
+            ),
+            Container(
+              height: MediaQuery.sizeOf(context).height * 0.6,
+              width: double.infinity,
+              padding: const EdgeInsets.symmetric(horizontal: 25, vertical: 30),
+              decoration: const BoxDecoration(
+                color: Colors.black,
+                // borderRadius: BorderRadius.vertical(top: Radius.circular(30)),
+              ),
+              child: const Column(
+                children: [
+                  Row(
+                    children: [
+                      buttons(),
+                      buttons(),
+                      buttons(),
+                      buttons(),
+                    ],
+                  )
+                ],
               ),
             ),
           ],
