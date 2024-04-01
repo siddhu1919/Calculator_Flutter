@@ -2,7 +2,6 @@
 
 import 'package:calculator/buttons.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 void main(List<String> args) {
   runApp(const MyApp());
@@ -78,7 +77,8 @@ class MyApp extends StatelessWidget {
               child: TextField(
                 controller: TextEditingController(),
                 textDirection: TextDirection.rtl,
-                showCursor: false,
+                showCursor: true,
+                cursorColor: Colors.red,
                 style: const TextStyle(
                   fontSize: 50,
                   color: Colors.lightGreenAccent,
@@ -96,20 +96,67 @@ class MyApp extends StatelessWidget {
               width: double.infinity,
               padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 25),
               decoration: const BoxDecoration(
-                color: Colors.white,
+                color: Colors.black,
                 // borderRadius: BorderRadius.vertical(top: Radius.circular(30)),
               ),
-              child: const Column(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      buttons(),
-                      SizedBox(width: 25),
-                      buttons(),
-                      SizedBox(width: 25),
-                      buttons(),
-                      SizedBox(width: 25),
-                      buttons(),
+                      buttons(label: "C"),
+                      buttons(label: "%"),
+                      CircleAvatar(
+                        radius: 36,
+                        backgroundColor: Color.fromRGBO(50, 50, 50, 1),
+                        child: IconButton(
+                          icon: Icon(
+                            Icons.backspace_outlined,
+                            size: 34,
+                            color: Colors.white,
+                          ),
+                          onPressed: () {},
+                        ),
+                      ),
+                      buttons(label: "4"),
+                    ],
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: const [
+                      buttons(label: "7"),
+                      buttons(label: "8"),
+                      buttons(label: "9"),
+                      buttons(label: "x"),
+                    ],
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: const [
+                      buttons(label: "4"),
+                      buttons(label: "5"),
+                      buttons(label: "6"),
+                      buttons(label: "-"),
+                    ],
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: const [
+                      buttons(label: "1"),
+                      buttons(label: "2"),
+                      buttons(label: "3"),
+                      buttons(label: "+"),
+                    ],
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: const [
+                      buttons(label: "00"),
+                      buttons(label: "0"),
+                      buttons(label: "."),
+                      buttons(
+                          label: "=", bgColor: Color.fromRGBO(255, 102, 26, 1)),
                     ],
                   )
                 ],
