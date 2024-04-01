@@ -4,8 +4,9 @@ import 'package:calculator/provider/cal_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-class buttons extends StatelessWidget {
-  const buttons({
+class CalculateButton extends StatelessWidget {
+  
+  const CalculateButton({
     super.key,
     required this.label,
     this.textColor = Colors.white,
@@ -18,7 +19,7 @@ class buttons extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
-        Provider.of<CalculatorProvider>(context, listen: false).setValue(label);
+        Provider.of<CalculatorProvider>(context, listen: false).setValue("=");
       },
       child: CircleAvatar(
         radius: 40,
