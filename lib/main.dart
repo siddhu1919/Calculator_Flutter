@@ -125,36 +125,48 @@ class MyApp extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: const [
-                      buttons(label: "7"),
-                      buttons(label: "8"),
-                      buttons(label: "9"),
+                      buttons(
+                          label: "7", bgColor: Color.fromRGBO(26, 26, 26, 1)),
+                      buttons(
+                          label: "8", bgColor: Color.fromRGBO(26, 26, 26, 1)),
+                      buttons(
+                          label: "9", bgColor: Color.fromRGBO(26, 26, 26, 1)),
                       buttons(label: "x"),
                     ],
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: const [
-                      buttons(label: "4"),
-                      buttons(label: "5"),
-                      buttons(label: "6"),
+                      buttons(
+                          label: "4", bgColor: Color.fromRGBO(26, 26, 26, 1)),
+                      buttons(
+                          label: "5", bgColor: Color.fromRGBO(26, 26, 26, 1)),
+                      buttons(
+                          label: "6", bgColor: Color.fromRGBO(26, 26, 26, 1)),
                       buttons(label: "-"),
                     ],
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: const [
-                      buttons(label: "1"),
-                      buttons(label: "2"),
-                      buttons(label: "3"),
+                      buttons(
+                          label: "1", bgColor: Color.fromRGBO(26, 26, 26, 1)),
+                      buttons(
+                          label: "2", bgColor: Color.fromRGBO(26, 26, 26, 1)),
+                      buttons(
+                          label: "3", bgColor: Color.fromRGBO(26, 26, 26, 1)),
                       buttons(label: "+"),
                     ],
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: const [
-                      buttons(label: "00"),
-                      buttons(label: "0"),
-                      buttons(label: "."),
+                      buttons(
+                          label: "00", bgColor: Color.fromRGBO(26, 26, 26, 1)),
+                      buttons(
+                          label: "0", bgColor: Color.fromRGBO(26, 26, 26, 1)),
+                      buttons(
+                          label: ".", bgColor: Color.fromRGBO(26, 26, 26, 1)),
                       buttons(
                           label: "=", bgColor: Color.fromRGBO(255, 102, 26, 1)),
                     ],
