@@ -33,8 +33,8 @@ Before you begin, ensure you have met the following requirements:
     ```
 2. Navigate to the project directory
   ```sh
-   cd flutter_calculator
-
+   cd Calculator_Flutter
+   ```
 3. Install the dependencies
   ```sh
   flutter pub get
