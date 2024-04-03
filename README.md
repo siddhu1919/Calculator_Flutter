@@ -28,9 +28,9 @@ Before you begin, ensure you have met the following requirements:
 ### Installation
 
 1. Clone the repo
-   ```sh
+ ```sh
    git clone https://github.com/siddhu1919/Calculator_Flutter.git
-    ```
+  ```
 2. Navigate to the project directory
   ```sh
    cd Calculator_Flutter
