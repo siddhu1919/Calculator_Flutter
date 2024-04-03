@@ -62,6 +62,6 @@ Open a Pull Request
 Distributed under the MIT License. See LICENSE for more information.
 
 Contact 📫
-Siddharth G Singh - @siddhu1919 - [Linkedin](https://www.linkedin.com/in/siddharth-g-singh-46b610201/)
-Project Link: https://github.com/siddhu1919/Calculator_Flutter.git
+- Siddharth G Singh - @siddhu1919 - [Linkedin](https://www.linkedin.com/in/siddharth-g-singh-46b610201/)
+- Project Link: https://github.com/siddhu1919/Calculator_Flutter.git
    
